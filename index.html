@@ -4,37 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Playground</title>
-    <style>*{transition:.2s}html{background:#ddd;font-family:'Courier New',Courier,monospace}style{box-sizing:border-box;display:inline-block;white-space:pre;padding:1rem;margin-bottom:1rem;width: 100%;}</style>
+    <style>*{transition:.2s}html{background:#ddd;font-family:'Courier New',Courier,monospace}style{box-sizing:border-box;display:inline-block;white-space:pre;padding:1rem;margin-bottom:1rem;width: 100%;}#help{cursor:help;text-decoration-line:underline;text-decoration-style:dotted;}</style>
 </head>
 <body>
-    <style contenteditable>main {
+	<h1><span id="help" title="Only chrome, contenteditable in style tags does not work in Firefox or Edge">Edit</span> below code as if was an input</h1>
+    <style id="css-playground" contenteditable>main {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1rem;
-    height: 119px;
+    height: 200px;
     border-radius: 5px;
     border: 1px solid #000;
     background-color: #fff;
 }
 
 main>div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    width: 100px;
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    padding: 15px;
     background-color: #f7ff82d8;
     border-radius: 5px;
     box-shadow: 7px 6px 5px rgba(0, 0, 0, 0.2);
+    white-space: pre;
 }</style>
     <main>
-        <div contenteditable>
-            div 1
-        </div>
-        <div contenteditable>
-            div 2
-        </div>
+        <div contenteditable>//post it #1</div>
+        <div contenteditable>//post it #2</div>
     </main>
 </body>
 </html>
